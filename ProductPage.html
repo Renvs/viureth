@@ -4,10 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="assets/viureth-favicon-color.png" />
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -26,8 +22,8 @@
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-blue-800 -mr-12">
-            View Cart
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-blue-800 -mr-12">
+            <i class='bx bxs-cart'></i>
           </button>
           <button data-collapse-toggle="navbar-sticky" type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -68,106 +64,74 @@
 
   <main>
     <section id="products">
-        <div id="carousel">
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="assets/logo-color.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="assets/logo-color.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="assets/logo-color.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="assets/logo-color.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="assets/logo-color.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+      <div class=" bg-cover bg-center h-[360px] p-8 " style="background-image: url(assets/background_image.jpg) ;">
+        <div class=" p-3 flex header h-[300px]">
+          <div class="swiper m-3 h-[250px] w-[50%] rounded-lg ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide flex justify-center items-center"><img src="assets/viureth-favicon-color.png" alt=""></div>
+              <div class="swiper-slide flex justify-center items-center"><img src="assets/Mouse-Gaming-Thor-X9.jpg.webp" alt=""></div>
+              ...
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-scrollbar"></div>
 
         </div>
+        <div class="bg-black w-[50%] m-3 rounded-lg ">
+          <h1>test</h1>
+        </div>
+      </div>
+      </div>
       <div class=" bg-orange-500 h-max bg-fixed pt-8 pb-8">
         <div class="dark:text-black flex justify-center text-4xl font-sans mb-11 relative" id="product-header">
           <h3>Our Best Selling Product</h3>
         </div>
-        <div class="flex flex-wrap justify-between px-20 products">
-          <div v-for="product in products" :key="product.nama" class="w-full max-h-80 max-w-xs bg-white rounded-lg shadow dark:bg-gray-800 overflow-hidden" id="product-card" >
-            <a href="#">
-              <img class="mx-auto rounded-t-lg h-[320px] z-20" :src="product.image" alt="product image" />
-            </a>
-            <div class="px-5 pb-5 -mt-[320px] fixed product_detail w-full h-[320px] content-end ">
-              <a href="#">
-                <h5 class="text-l font-semibold tracking-tight text-white  ">{{product.nama}}</h5>
-                </a>
-                <div class="flex items-center mt-2.5 mb-2">
-                  <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" viewBox="0 0 22 20">
+        <div class="flex flex-wrap justify-between px-20 ">
+          <div v-for="product in products" :key="product.nama" class=" w-full h-80 max-w-xs rounded-lg shadow dark:bg-gray-800 overflow-hidden mb-[15px]" id="product-card" >
+            <a href="ProductDescription.html">
+              <div class=" h-[320px] content-end" id="product_detail">
+                <img class="mx-auto rounded-t-lg bg-cover " :src="product.image" id="product_image"/>
+                <a href="ProductDescription.html">
+                  <div class="px-5 pb-5">
+                  <h5 class="text-l font-semibold tracking-tight text-white  ">{{product.nama}}</h5>
+                  </a>
+                  <div class="flex items-center mt-2.5 mb-2">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
                     <path
                     d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                   </svg>
                   <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor" viewBox="0 0 22 20">
-                    <path
+                      <path
                       d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                </div>
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor" viewBox="0 0 22 20">
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                  </div>
+                </a>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatRupiah(product.harga) }}</span>
-                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-500 font-medium rounded-md text-xs px-2 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-600" @click="addItemToKeranjang(product)">Add
+                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-500 font-medium rounded-md text-xs px-2 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-600" @click="addItemToKeranjang(products)">Add
                   to cart</button>
                 </div>
+              </div>
               </div>
             </div>
         </div>
@@ -175,12 +139,11 @@
             <div class="keranjang">
               <div class=" mx-9 mt-[100px] bg-orange-500 h-auto mb-[65px] bg-fixed rounded-3xl p-8 ">
                 <div class="px-8">
-                      <div v-for="(item, index) in keranjang" :key="index">
-                        
+                      <div v-for="item in keranjang">
                       <div class="max-h-80 rounded-lg shadow dark:bg-gray-800 flex w-full justify-between mb-4">
                         <div class="flex ">
                           <a href="#">
-                            <img class="p-8 rounded-t-lg h-[192px]" :src="item.image" alt="product image" />
+                            <img class="p-8 rounded-t-lg" :src="item.image" alt="product image" />
                           </a>
                           <div class="px-5 h-fit self-center text-pretty w-[400px] ">
                             <a href="#">
@@ -207,70 +170,130 @@
   </main>
     
     <footer>
-      <div class="dark:bg-gray-900 h-20 p-3 py-8">
+      <div class="dark:bg-gray-900 h-20 p-3 py-8 bottom-0 ">
       <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Viureth™</a>. All Rights Reserved.</span>
       </div>
     </footer>
   </div>
   
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
- var app = new Vue({
-  el: "#app",
-  data() {
-    return {
-      keranjang: [],
-      products: [
+
+  var app = new Vue({
+    el: "#app",
+    data() {
+      return {
+        keranjang: [],
+        products: [
         {
-          nama: "Fantech THOR X9",
-          harga: 100000,
-          image: 'assets/Mouse-Gaming-Thor-X9.jpg.jpg',
-          rating: '',
-        },
-        {
-          nama: "Keyboard",
-          harga: 2100000,
-          image: 'https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-x60-wireless-keyboard/gallery/pro-x-60-keyboard-black-gallery-1-us.png?v=1',
-          rating: '',
-        },
-        {
-          nama: "Revolver II GP12",
-          harga: 2100000,
-          image: 'https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-x60-wireless-keyboard/gallery/pro-x-60-keyboard-black-gallery-1-us.png?v=1',
-          rating: '',
+      id: 1,
+      nama: 'Logitech G105',
+      harga: 599000,
+      image: 'assets/image/mouse1.jpg'
+    },
+    {
+      id: 2,
+      nama: 'Logitech X Superlight 2',
+      harga: 2399000,
+      image: 'assets/image/mouse2.webp'
+    },
+    {
+      id: 3,
+      nama: 'Fantech Helios II',
+      harga: 599000,
+      image: 'assets/image/mouse3.png'
+    },
+    {
+      id: 4,
+      nama: 'Fantech MAXFIT67',
+      harga: 1299000,
+      image: 'assets/image/keyboard2.png'
+    },
+    {
+      id: 5,
+      nama: 'Logitech Pro X 60',
+      harga: 2100000,
+      image: 'assets/image/keyboard1.webp'
+    },
+    {
+      id: 6,
+      nama: 'Fantech MAXFIT61',
+      harga: 1300000,
+      image: 'assets/image/keyboard3.png'
+    },
+    {
+      id:7, 
+      nama: 'ROG Swift OLED PG34WCDM',
+      harga: 30500000,
+      image: 'assets/image/monitor1.png'
+    },
+    {
+      id: 8,
+      nama: 'Hyperx Armada 25 FHD Monitor',
+      harga: 8250000,
+      image: 'assets/image/monitor2.webp'
+    },
+    {
+      id:9,
+      nama: 'Nitro XV275K P3 Widescreen Gaming LCD Monitor',
+      harga: 12796000,
+      image: 'assets/image/monitor3.png'
+    }
+        ]
+      };
+    },
+    computed: {
+      totalHarga() {
+        return this.keranjang.reduce((total, item) => total + (item.harga * item.quantity), 0);
+      }
+    },
+    methods: {
+      addItemToKeranjang(product) {
+        const existingItem = this.keranjang.find(item => item.nama === product.nama);
+        if (existingItem) {
+          existingItem.quantity++;
+        } else {
+          this.keranjang.push({ ...product,
+                                quantity: 1 });
         }
-      ]
-    };
-  },
-  computed: {
-    totalHarga() {
-      return this.keranjang.reduce((total, item) => total + (item.harga * item.quantity), 0);
-    }
-  },
-  methods: {
-    addItemToKeranjang(product) {
-      const existingItem = this.keranjang.find(item => item.nama === product.nama);
-      if (existingItem) {
-        existingItem.quantity++;
-      } else {
-        this.keranjang.push({ ...product, quantity: 1 });
+        localStorage.setItem('productLocal', JSON.stringify(this.keranjang));
+      },
+      tambahItem(index) {
+        this.keranjang[index].quantity++;
+      },
+      kurangiItem(index) {
+        if (this.keranjang[index].quantity > 1) {
+          this.keranjang[index].quantity--;
+        } else {
+          this.keranjang.splice(index, 1);
+        }
+      },
+      formatRupiah(harga) {
+        return harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
+      },
+      deskripsiBarang(prodcut) {
+
       }
     },
-    tambahItem(index) {
-      this.keranjang[index].quantity++;
-    },
-    kurangiItem(index) {
-      if (this.keranjang[index].quantity > 1) {
-        this.keranjang[index].quantity--;
-      } else {
-        this.keranjang.splice(index, 1);
-      }
-    },
-    formatRupiah(harga) {
-      return harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
-    }
-  },
-  components: {}
-});
+    components: {}
+  });
+
+  const swiper = new Swiper('.swiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          clickable: true,
+          hide: true,
+        }
+  });
 </script>
 
 </body>

@@ -1,23 +1,37 @@
-/* CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 #product-card {
-    margin-bottom: 15px;
     filter: drop-shadow(-3px 5px 10px #000000);
-    transition: transform 0.3s ease-in-out; /* Smoother transition with ease-in-out timing function */
+    transition: all 0.3s ease-in-out; /* Smoother transition with ease-in-out timing function */
 }
 
-#product-card:hover {
+#product_card:hover {
+    transform: scale(1.03);
+}
+
+#product_detail {
+    transition: all 0.3s ease-in-out;
+}
+
+#product_detail:hover {
     transform: scale(1.05); /* Increase scale on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
-}
-
-.product_detail {
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-}
-
-.product_detail:hover {
     background: linear-gradient(to top,  rgba(0,0,0,0.9), rgba(0,0,0,0));
-    color: white;
 }
 
+.products {
+    transition: transform 0.3s ease-in-out;
+}
+
+.header {
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 10px;
+}
 
 
