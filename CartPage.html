@@ -1,137 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/viureth-favicon-color.png" />
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <link rel="stylesheet" href="style/LandingPage.css">
-  <title>Welcome | Viureth</title>
-</head>
-
-<body class="mt-15 h-fit bg-repeat-y bg-fixed bg-cover bg-center"
-style="background-image: url('assets/jack-b-fewhfXbCUzI-unsplash.jpg');">
-  <div id="app">
-    <header> 
-      <nav class="bg-white dark:bg-transparent sticky top-0 w-full z-20 top-0 start-0 backdrop-blur-sm ">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mt-5 scroll-smooth">
-          <a href="LandingPage.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="assets/viureth-favicon-color.png" class="h-12" alt="Flowbite Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white -ml-3"></span>
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-sm px-4 py-2 text-center dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-blue-800 -mr-12 flex items-center">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYhJREFUSEvFlTFSwzAURHfpYTgCKTkBLeEkpCHDDaACKrgBQxpyEpKWE1CSIzDQs/AT2SPHsi155LFmUkXW0+7/+0WMtDgSF+ODJZ0AsN92kVwP6UapWNI9gLs92ITkZogLdIHXJKdDg32rzz31g6gONper98rVfElyllt1Y1dLegVw6YA57N74/dIGNrtNdc41LdLSmmNJn37EMtxgRnK5jWvbYQ0R680nWfI6J1dG1Q//XJsVuwHVdf2MqkubY8E5msw6euKL7FRsmyVZd9sF+q6KzVGKHdjybLnuu2rTL0qxg/eNVs3maMUOHHq9Yhyo2ZwKtkekmN8xwF1svOwmN1fxQY9oVSLUG+wsj+3uyqOwb1F0c3mqrwAcA3gm+bN/oKRDANcAvkgummqSBJb0CODGHbYieREAvwEontEnkrcheCrYP1QkDwLgX28UBy+X1NWuvmbzi4MtSM4DYPvf9tmaN9mdpNjBTwEckXxvqp+kMwDfJD+y1Dg6vBEbkxVHnBm1ZTTwHxGHjh8T7DuDAAAAAElFTkSuQmCC"/>
-            </button>
-          </div>
-          
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#products"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-transparent dark:border-gray-700">Products</a>
-              </li>
-              <li>
-              <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-transparent dark:border-gray-700">About</a>
-            </li>
-            <li>
-              <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-    
-  <main>
-    <section id="products">
-      <div class=" mx-9 mt-[100px] bg-orange-500 h-auto mb-[65px] bg-fixed rounded-3xl p-8 ">
-        <div class="dark:text-black flex justify-center text-4xl font-sans mb-11" id="product-header">
-          <h3>Cart</h3>
-        </div>
-        <div class="px-8">
-          <div class="max-h-80 rounded-lg shadow dark:bg-gray-800 flex w-full justify-between " id="product-card">
-            <div class="flex ">
-              <a href="#">
-                <img class="p-8 rounded-t-lg h-[192px]" src="assets/viureth-favicon-color.png" alt="product image" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/viureth-favicon-color.png" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/ProductPage.css">
+    <title>Viureth</title>
+  </head>
+  
+  <body class="mt-15 h-[100svh] bg-repeat-y bg-fixed bg-cover bg-center"
+  style="background-image: url('assets/background_image.jpg');">
+    <div id="app">
+      <!-- Header -->
+      <header>
+        <div class="bg-transparent h-[80px] w-full z-20 py-[10px] backdrop-blur-sm top-0" id="nav">
+          <div class="max-w-screen max-h-[60px] flex items-center justify-between mx-[100px] scroll-smooth" id="nav_content">
+            <div>
+              <a href="index.html">
+                <img src="assets/viureth-favicon-color.png" alt="logo_icon.png" class="h-[60px] mr-[500px]">
               </a>
-              <div class="px-5 h-fit self-center text-pretty w-[400px] ">
-                <a href="#">
-                  <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ totalBarang.nama }}</h5>
-                  </a>
-                </div>
             </div>
-              <div class="flex flex-col justify-center self-end px-8 pb-5 ">
-                <span class="text-3xl text-center font-bold text-gray-900 dark:text-white">$599</span>
-                <a href="#"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-                  to cart</a>
+            <div class="" id="nav_list">
+              <ul class="flex gap-x-11 text-white font-medium">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ProductPage.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div id="cart_btn">
+              <a href="CartPage.html">
+                <button class="py-[5px] px-[10px] rounded-[15px] drop-shadow-xl bg-orange-500 hover:drop-shadow-xl scale-[1.1]">Cart <i class='bx bxs-cart-alt'></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </header>
+  
+      <main>
+        <div v-if="keranjang.length > 0">
+          <div class="flex justify-center h-auto">
+            <div class="mx-[50px] flex my-auto bg-orange-500 relative rounded-3xl p-8 font-bold w-full gap-x-8">
+              <div class="grid grid-flow-row gap-y-4">
+                <div v-for="(item, index) in keranjang" :key="item.id">
+                  <div class="max-h-80 rounded-lg shadow bg-gray-800 flex w-[100%]">
+                    <div class="flex">
+                      <a href="#">
+                        <img class="p-3 rounded-t-lg h-[192px] w-[200px] object-cover" :src="item.image" alt="product image" />
+                      </a>
+                      <div class="px-5 h-fit self-center text-pretty w-[500px] ">
+                        <a href="#">
+                          <h5 class="text-2xl font-normal tracking-tight dark:text-white">{{ item.nama }}</h5>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="self-center px-8 justify-end">
+                      <div class="">
+                        <span class="text-2xl text-center font-thin text-white ">{{ formatRupiah(item.harga * item.quantity) }}</span>
+                      </div>
+                      <div class="flex justify-end gap-x-[20px] mt-4 ">
+                        <button @click="tambahItem(index)" class="w-[50px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i class='bx bx-plus'></i></button>
+                        <h6 class="text-2xl font-thin tracking-tight text-white "> {{ item.quantity }} x </h6>
+                        <button @click="kurangiItem(index)" class="w-[50px] text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center "><i class='bx bx-minus'></i></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="bg-gray-800 h-[100] w-[30%] rounded-xl p-8 flex flex-col justify-between">
+                  <div class="mb-[30px]">
+                    <h5 class="text-center text-white text-3xl">Confirm Order <hr class="mt-3"></h5>
+                  </div>
+                  <div class="flex flex-col gap-y-4">
+                    <div v-for="(item, index) in keranjang" :key="item.id" class="flex justify-between ">
+                      <h6 class="text-white text-pretty font-normal text-l max-w-[150px] ">{{ item.nama }}</h6>
+                      <h6 class="text-green-600 font-bold text-l flex items-center ">{{ formatRupiah(item.harga * item.quantity) }}</h6>
+                    </div>
+                  </div>
+                  <hr class="mt-[100px] ">
+                  <div class=" flex justify-between mt-[10px]">
+                    <h5 class="text-start font-normal text-white text-2xl ">Total :</h5>
+                    <h5 class="text-start text-white text-2xl"> {{ formatRupiah(totalHarga) }}</h5>
+                  </div>
+                  <div class="flex justify-center mt-5">
+                    <button class="bg-yellow-500 w-full h-[35px] rounded-l hover:bg-yellow-300 hover:scale-[1.1] duration-300" @click="checkout()">Checkout</button>
+                  </div>
+              </div>
+            </div>
           </div>
-        </div> 
-      </div>
-    </section>
-  </main>
-    
-    <footer>
-      <div class="dark:bg-gray-900 h-20 p-3 py-8 bottom-0 w-full">
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Viureth™</a>. All Rights Reserved.</span>
-      </div>
-    </footer>
-  </div>
+        </div>
+        <div v-else class="text-center flex justify-center h-[80vh]">
+          <div class="mx-9 my-auto bg-orange-500 h-auto rounded-3xl p-8 font-bold w-full">
+            <h4>Your Cart Is Empty</h4>
+          </div>
+        </div>
+      </main>
   
-  <script>
-    var app = new Vue({
-     el: "#app",
-     data() {
-       return {
-        totalBarang: Keranjang,
-        Keranjang: [],
-       };
-     },
-     computed: {
-       totalHarga() {
-         return this.keranjang.reduce((total, item) => total + (item.harga * item.quantity), 0);
-       }
-     },
-     methods: {
-       addItemToKeranjang(product) {
-         const existingItem = this.keranjang.find(item => item.nama === product.nama);
-         if (existingItem) {
-           existingItem.quantity++;
-         } else {
-           this.keranjang.push({ ...product, quantity: 1 });
-         }
-       },
-       tambahItem(index) {
-         this.keranjang[index].quantity++;
-       },
-       kurangiItem(index) {
-         if (this.keranjang[index].quantity > 1) {
-           this.keranjang[index].quantity--;
-         } else {
-           this.keranjang.splice(index, 1);
-         }
-       },
-       formatRupiah(harga) {
-         return harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
-       }
-     },
-     components: {}
-   });
-   </script>
-</body>
-
+      <footer class="bg-gray-900 text-white p-4 mt-8 w-full ">
+        <div class="container mx-auto text-center">
+          <span class="block text-sm">© 2024 <a href="https://flowbite.com/" class="hover:underline">Viureth™</a>. All Rights Reserved.</span>
+        </div>
+      </footer>
+    </div>
+  
+    <script src="main.js"></script>
+    
+  </body>
 </html>
